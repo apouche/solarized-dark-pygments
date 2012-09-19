@@ -13,19 +13,19 @@ for a light background version, try
 [solarized_home]: http://ethanschoonover.com/solarized
 [light_bg_pygments]: https://github.com/john2x/solarized-pygment
 
-## How Do I Use It?
+## How Do I Install It?
 
-This is just a `Style`, not a plugin, so you need to add it to the `styles`
-directory of your Pygments distribution. Here is an excerpt from the [relevant
-documentation][style_docs]:
+You must first, find the path of the Pygments egg styles folder, this is usually something like
+`/Library/Python/2.7/site-packages/Pygments-1.5-py2.7.egg/pygments/styles/`.
 
-> drop it into the styles subpackage of your Pygments distribution one style
-> class per style, where the file name is the style name and the class name is
-> `StylenameClass`. For example, if your style should be called "mondrian",
-> name the class `MondrianStyle`, put it into the file `mondrian.py` and this
-> file into the `pygments.styles` subpackage directory.
+Then execute :
 
-[style_docs]: http://pygments.org/docs/styles/
+`sudo git clone git://github.com/gthank/solarized-dark-pygments.git && solarized-dark-pygments.git`
+`sudo python setup.py install`
+
+You're done, now you can do things like :
+
+`pygmentize -O full,style=solarized -o ~/Desktop/test.html ~/.bashrc`
 
 ## Acknowledgements
 
