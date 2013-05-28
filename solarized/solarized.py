@@ -9,7 +9,7 @@ from pygments.token import Token, Comment, Name, Keyword, Generic, Number, Opera
 
 BASE03 = '#002B36'
 BASE02 = '#073642'
-BASE01 = '#586E75'
+BASE01 = '#aaaaaa' #'#586E75'
 BASE00 = '#657B83'
 BASE0 = '#839496'
 BASE1 = '#93A1A1'
@@ -23,7 +23,8 @@ VIOLET = '#6C71C4'
 BLUE = '#268BD2'
 CYAN = '#2AA198'
 GREEN = '#859900'
-
+LIGHT_GRAY = '#dddddd'
+DARK_GRAY  = '#555555'
 class SolarizedStyle(Style):
     background_color = BASE03
     styles = {
@@ -80,7 +81,7 @@ class SolarizedStyle(Style):
 
         #Punctuation: ORANGE,
 
-        Comment: BASE01,
+        Comment: DARK_GRAY,
         #Comment.Multiline
         Comment.Preproc: GREEN,
         #Comment.Single
