@@ -20,7 +20,7 @@ You must first, find the path of the Pygments egg styles folder, this is usually
 
 Then execute :
 
-    sudo git clone git://github.com/gthank/solarized-dark-pygments.git && cd solarized-dark-pygments.git
+    sudo git clone git://github.com/gthank/solarized-dark-pygments.git && cd solarized-dark-pygments
     sudo python setup.py install
 
 You're done, now you can do things like :
